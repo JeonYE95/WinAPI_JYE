@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a51a05f6-954b-4b38-954f-f151411123bd}</ProjectGuid>
-    <RootNamespace>WindowsAPI</RootNamespace>
+    <ProjectGuid>{c9bf611a-4a34-42c4-871b-b11559ed9cd8}</ProjectGuid>
+    <RootNamespace>Skul</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,20 +127,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Common.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="SKGameObject.h" />
+    <ClInclude Include="Maths.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SkApplication.h" />
+    <ClInclude Include="SKEntity.h" />
+    <ClInclude Include="SKInput.h" />
+    <ClInclude Include="SKLogoScene.h" />
+    <ClInclude Include="SKPlayer.h" />
+    <ClInclude Include="SKPlayScene.h" />
+    <ClInclude Include="SKScene.h" />
+    <ClInclude Include="SKSceneManager.h" />
+    <ClInclude Include="SKTime.h" />
+    <ClInclude Include="Skul.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="WindowsAPI.h" />
+    <ClInclude Include="def.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WindowsAPI.cpp" />
+    <ClCompile Include="SKGameObject.cpp" />
+    <ClCompile Include="SkApplication.cpp" />
+    <ClCompile Include="SKEntity.cpp" />
+    <ClCompile Include="SKInput.cpp" />
+    <ClCompile Include="SKLogoScene.cpp" />
+    <ClCompile Include="SKPlayer.cpp" />
+    <ClCompile Include="SKPlayScene.cpp" />
+    <ClCompile Include="SKScene.cpp" />
+    <ClCompile Include="SKSceneManager.cpp" />
+    <ClCompile Include="SKTime.cpp" />
+    <ClCompile Include="Skul.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="WindowsAPI.rc" />
+    <ResourceCompile Include="Skul.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Skul.ico" />
     <Image Include="small.ico" />
-    <Image Include="WindowsAPI.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
