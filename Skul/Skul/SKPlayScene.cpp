@@ -1,6 +1,9 @@
 #include "SKPlayScene.h"
 #include "SKPlayer.h"
 #include "SKSceneManager.h"
+#include "SKInput.h"
+#include "SKBGImageObject.h"
+
 
 namespace SK
 {
@@ -14,6 +17,12 @@ namespace SK
 
 	void PlayScene::Initialize()
 	{
+		BGImageObject* bg = new BGImageObject();
+		bg->SetImage(L"stagebg", L"stagebg.bmp");
+		bg->Initialize();
+
+		AddGameObject(bg);
+
 		AddGameObject(new Player());
 	}
 

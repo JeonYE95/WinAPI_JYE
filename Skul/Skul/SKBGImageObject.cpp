@@ -15,10 +15,7 @@ namespace SK
 	}
 	void BGImageObject::Initialize()
 	{
-		if (mImage == nullptr)
-		{
-			mImage = Resources::Load<Image>(L"LogoBG", L"..\\Resources\\Image\\Title.bmp");
-		}
+	
 	}
 	void BGImageObject::Tick()
 	{
@@ -41,6 +38,12 @@ namespace SK
 		);
 
 		GameObject::Render(hdc);
-		GameObject::Render(hdc);
+	}
+	void BGImageObject::SetImage(const std::wstring& key, const std::wstring& filename)
+	{
+		std::wstring path = L"..\\Resources\\Image\\";
+		path += filename;
+
+		mImage = Resources::Load<Image>(key, path);
 	}
 }

@@ -17,6 +17,7 @@ namespace SK
 	void LogoScene::Initialize()
 	{
 		BGImageObject* bg = new BGImageObject();
+		bg->SetImage(L"Title" , L"Title.bmp");
 		bg->Initialize();
 
 		AddGameObject(bg);

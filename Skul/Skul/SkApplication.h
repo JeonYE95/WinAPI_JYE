@@ -18,6 +18,8 @@ namespace SK
 		void Tick();
 
 		WindowData GetWindowData() { return mWindowData; }
+		HPEN GetPen(ePenColor color) { return mPens[(UINT)color]; }
+		HBRUSH GetBrush(eBrushColor color) { return mBrushes[(UINT)color]; }
 
 	private:
 		Application();

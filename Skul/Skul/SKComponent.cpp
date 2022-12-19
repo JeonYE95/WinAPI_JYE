@@ -5,6 +5,7 @@ namespace SK
 {
 	Component::Component(eComponentType type)
 		: mType(type)
+		, mOwner(nullptr)
 	{
 	}
 

@@ -15,8 +15,11 @@ namespace SK
 		virtual void Tick() override;
 		virtual void Render(HDC hdc) override;
 
+		void SetImage(const std::wstring& key, const std::wstring& filename);
+
 	private:
 		Image* mImage;
+		std::wstring mImageName;
 
 	};
 
