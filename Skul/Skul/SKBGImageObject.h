@@ -1,20 +1,23 @@
 #pragma once
 #include "SKGameObject.h"
 
+
 namespace SK
 {
 	class Image;
-	class Player : public GameObject
+	class BGImageObject : public GameObject
 	{
 	public:
-		Player();
-		~Player();
+		BGImageObject();
+		~BGImageObject();
 
+		virtual void Initialize() override;
 		virtual void Tick() override;
 		virtual void Render(HDC hdc) override;
 
 	private:
-		float mSpeed;
 		Image* mImage;
+
 	};
+
 }

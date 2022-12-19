@@ -2,6 +2,7 @@
 
 #include "Common.h"
 #include "SKEntity.h"
+#include "SKComponent.h"
 
 namespace SK
 {
@@ -21,8 +22,15 @@ namespace SK
 		void SetScale(Vector2 scale) { mScale = scale; }
 		Vector2 GetScale() { return mScale; }
 
+		void AddComponent(Component* component);
+
+		//void SetHdc(HDC hdc) { mHdc = hdc; }
+		//HDC GetHdc() { return mHdc; }
+
 	private:
+		std::vector<Component*> mComponents;
 		Vector2 mPos;
 		Vector2 mScale;
+		//HDC mHdc;
 	};
 }

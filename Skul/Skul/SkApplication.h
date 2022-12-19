@@ -17,13 +17,18 @@ namespace SK
 		void Initialize(WindowData data);
 		void Tick();
 
+		WindowData GetWindowData() { return mWindowData; }
+
 	private:
 		Application();
 		~Application();
 
+		void InitializeWindow(WindowData data);
+
 	private:
 		WindowData mWindowData;
-
+		HPEN mPens[(UINT)ePenColor::End];
+		HBRUSH mBrushes[(UINT)eBrushColor::End];
 	};
 }
 

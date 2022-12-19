@@ -1,5 +1,6 @@
 #include "SKSceneManager.h"
 #include "SKLogoScene.h"
+#include "SKPlayScene.h"
 
 namespace SK
 {
@@ -11,7 +12,11 @@ namespace SK
 		mScenes[(UINT)eSceneType::Logo] = new LogoScene();
 		mScenes[(UINT)eSceneType::Logo]->Initialize();
 
-		mPlayScene = mScenes[(UINT)eSceneType::Logo];
+		mScenes[(UINT)eSceneType::Play] = new PlayScene();
+		mScenes[(UINT)eSceneType::Play]->Initialize();
+
+		ChangeScene(eSceneType::Logo);
+	
 	}
 	
 	void SceneManager::Tick()
@@ -33,5 +38,19 @@ namespace SK
 			delete scene;
 			scene = nullptr;
 		}
+	}
+	void SceneManager::ChangeScene(eSceneType type)
+	{
+		if (mPlayScene == nullptr)
+		{
+			mPlayScene = mScenes[(UINT)eSceneType::Logo];
+		}
+		else
+		{
+			mPlayScene->Exit();
+			mPlayScene = mScenes[(UINT)type];
+		}
+
+		mPlayScene->Enter();
 	}
 }

@@ -14,6 +14,9 @@ namespace SK
 		void Tick() override;
 		void Render(HDC hdc) override;
 
+		virtual void Enter();
+		virtual void Exit();
+
 	private:
 
 	};

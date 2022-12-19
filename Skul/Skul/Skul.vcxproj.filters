@@ -36,6 +36,18 @@
     <Filter Include="Engine\GameObject\Base">
       <UniqueIdentifier>{962ec311-ddb4-46d3-b9fb-25dd6277c7a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Resource">
+      <UniqueIdentifier>{25059752-522e-4a8f-a9e7-60216d6e4dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource\Base">
+      <UniqueIdentifier>{421965cf-0042-4298-a79c-3990aeb07b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component">
+      <UniqueIdentifier>{05ddfdff-f2ac-4ca0-87b7-1d5a91cb3b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Base">
+      <UniqueIdentifier>{709447ac-09f2-4314-8fe2-3e41e3a2eff4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -89,6 +101,27 @@
     <ClInclude Include="SKInput.h">
       <Filter>Engine\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="SKResource.h">
+      <Filter>Engine\Resource\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SKImage.h">
+      <Filter>Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="SKResources.h">
+      <Filter>Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SKComponent.h">
+      <Filter>Engine\Component\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SKCollider.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="SKAnimator.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="SKBGImageObject.h">
+      <Filter>Engine\GameObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Skul.rc">
@@ -136,6 +169,30 @@
     </ClCompile>
     <ClCompile Include="SKInput.cpp">
       <Filter>Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SKResource.cpp">
+      <Filter>Engine\Resource\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="SKImage.cpp">
+      <Filter>Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="SKResources.cpp">
+      <Filter>Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths.cpp">
+      <Filter>Engine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SKComponent.cpp">
+      <Filter>Engine\Component\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="SKCollider.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="SKAnimator.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="SKBGImageObject.cpp">
+      <Filter>Engine\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

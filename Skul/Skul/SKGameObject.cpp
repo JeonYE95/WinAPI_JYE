@@ -10,17 +10,44 @@ namespace SK
 
 	GameObject::~GameObject()
 	{
+		for (Component* component : mComponents)
+		{
+			if (component == nullptr)
+				continue;
+
+			delete component;
+			component = nullptr;
+		}
 	}
 
 	void GameObject::Initialize()
 	{
+
 	}
 
 	void GameObject::Tick()
 	{
+		for ( Component* component : mComponents)
+		{
+			if (component ==nullptr)
+				continue;
+
+			component->Tick();
+		}
 	}
 
 	void GameObject::Render(HDC hdc)
 	{
+		for (Component* component : mComponents)
+		{
+			if (component == nullptr)
+				continue;
+
+			component->Render(hdc);
+		}
+	}
+	void GameObject::AddComponent(Component* component)
+	{
+		mComponents.push_back(component);
 	}
 }

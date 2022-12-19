@@ -129,15 +129,22 @@
   <ItemGroup>
     <ClInclude Include="Common.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="SKAnimator.h" />
+    <ClInclude Include="SKBGImageObject.h" />
+    <ClInclude Include="SKCollider.h" />
+    <ClInclude Include="SKComponent.h" />
     <ClInclude Include="SKGameObject.h" />
     <ClInclude Include="Maths.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SkApplication.h" />
     <ClInclude Include="SKEntity.h" />
+    <ClInclude Include="SKImage.h" />
     <ClInclude Include="SKInput.h" />
     <ClInclude Include="SKLogoScene.h" />
     <ClInclude Include="SKPlayer.h" />
     <ClInclude Include="SKPlayScene.h" />
+    <ClInclude Include="SKResource.h" />
+    <ClInclude Include="SKResources.h" />
     <ClInclude Include="SKScene.h" />
     <ClInclude Include="SKSceneManager.h" />
     <ClInclude Include="SKTime.h" />
@@ -146,13 +153,21 @@
     <ClInclude Include="def.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Maths.cpp" />
+    <ClCompile Include="SKAnimator.cpp" />
+    <ClCompile Include="SKBGImageObject.cpp" />
+    <ClCompile Include="SKCollider.cpp" />
+    <ClCompile Include="SKComponent.cpp" />
     <ClCompile Include="SKGameObject.cpp" />
     <ClCompile Include="SkApplication.cpp" />
     <ClCompile Include="SKEntity.cpp" />
+    <ClCompile Include="SKImage.cpp" />
     <ClCompile Include="SKInput.cpp" />
     <ClCompile Include="SKLogoScene.cpp" />
     <ClCompile Include="SKPlayer.cpp" />
     <ClCompile Include="SKPlayScene.cpp" />
+    <ClCompile Include="SKResource.cpp" />
+    <ClCompile Include="SKResources.cpp" />
     <ClCompile Include="SKScene.cpp" />
     <ClCompile Include="SKSceneManager.cpp" />
     <ClCompile Include="SKTime.cpp" />

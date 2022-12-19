@@ -41,6 +41,14 @@ namespace SK
 		}
 	}
 
+	void Scene::Enter()
+	{
+	}
+
+	void Scene::Exit()
+	{
+	}
+
 	void Scene::AddGameObject(GameObject* object)
 	{
 		if (object == nullptr)

@@ -14,6 +14,8 @@ namespace SK
 		static void Render(HDC hdc);
 		static void Release();
 
+		static void ChangeScene(eSceneType type);
+
 	private:
 		static Scene* mScenes[(UINT)eSceneType::Max];
 		static Scene* mPlayScene;
